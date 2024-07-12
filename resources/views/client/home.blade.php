@@ -7,10 +7,9 @@
             <div class="item">
                 <div class="slider-image-info">
                     <div class="slider-image">
-                        <img src="{{asset('img/banner/home5-slider-1.jpg')}}" class="img-fluid desk-img" alt="slider1">
-                        <img src="{{asset('img/banner/home5-mobile-slider1.jpg')}}" class="img-fluid mobile-img" alt="mobile-slider1">
+                        <img src="{{asset('img/banner/ban5.jpg')}}"  alt="slider1" width="980px" height="550px">
                     </div>
-                    <div class="container slider-text-content">
+                    <!-- <div class="container slider-text-content">
                         <div class="slider-text-info slider-content-right slider-text-left">
                             <h2><span>Filled with nutrients</span></h2>
                             <div class="slider-price">
@@ -33,16 +32,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="item">
                 <div class="slider-image-info">
                     <div class="slider-image">
-                        <img src="{{ asset('img/banner/home5-slider-2.jpg') }} " class="img-fluid desk-img" alt="slider2">
-                        <img src="{{ asset('img/banner/home5-mobile-slider2.jpg') }} " class="img-fluid mobile-img" alt="mobile-slider2">
+                        <img src="{{ asset('img/banner/ban1.jpg') }} " alt="slider2"width="980px" height="550px">
                     </div>
-                    <div class="container slider-text-content">
+                    <!-- <div class="container slider-text-content">
                         <div class="slider-text-info slider-content-right slider-text-left">
                             <h2><span>Filled with nutrients</span></h2>
                             <div class="slider-price">
@@ -65,16 +63,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="item">
                 <div class="slider-image-info">
                     <div class="slider-image">
-                        <img src="{{asset('img/banner/home5-slider-3.jpg')}}" class="img-fluid desk-img" alt="slider3">
-                        <img src="{{asset('img/banner/home5-mobile-slider3.jpg')}}" class="img-fluid mobile-img" alt="mobile-slider3">
+                        <img src="{{asset('img/banner/ban3.jpg')}}"width="980px" height="550px" alt="slider3">
                     </div>
-                    <div class="container slider-text-content">
+                    <!-- <div class="container slider-text-content">
                         <div class="slider-text-info slider-content-right slider-text-left">
                             <h2><span>Filled with nutrients</span></h2>
                             <div class="slider-price">
@@ -97,7 +94,38 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-image-info">
+                    <div class="slider-image">
+                        <img src="{{asset('img/banner/ban4.jpg')}}" width="980px" height="550px" alt="slider3">
                     </div>
+                    <!-- <div class="container slider-text-content">
+                        <div class="slider-text-info slider-content-right slider-text-left">
+                            <h2><span>Filled with nutrients</span></h2>
+                            <div class="slider-price">
+                                <span class="slider-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <h2 class="price-text">
+                                    <span>$24.00</span>
+                                    <span>$37.00</span>
+                                </h2>
+                            </div>
+                            <div class="main-btn">
+                                <div class="slider-link">
+                                    <a href="collection.html.html" class="btn btn-style">Shop now</a>
+                                    <a href="collection.html.html" class="btn btn-style3">All product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -160,7 +188,54 @@
     </div>
     <!-- brand-logo end -->
     <!-- banner-grid start -->
-
+    <section class="banner-grid section-ptb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="banner-content">
+                                <ul class="banner-ul">
+                                    <li class="banner-li">
+                                        <div class="banner-wrap">
+                                            <a href="collection.html" class="banner-img">
+                                                <img src="{{asset('img/banner/b3.jpg')}}" class="img-fluid" alt="banner1">
+                                            </a>
+                                            <div class="banner-wrapper banner-right">
+                                                <div class="banner-info">
+                                                    <div class="banner-sub-title">
+                                                        <span>Get 30% off</span>
+                                                    </div>
+                                                    <h2>Túi da mềm chất lượng</h2>
+                                                    <div class="banner-link">
+                                                        <a href="collection.html" class="btn btn-style">Shop now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="banner-li">
+                                        <div class="banner-wrap">
+                                            <a href="collection.html" class="banner-img">
+                                                <img src="{{asset('img/banner/b2.jpg')}}" class="img-fluid" alt="banner2">
+                                            </a>
+                                            <div class="banner-wrapper banner-left">
+                                                <div class="banner-info">
+                                                    <div class="banner-sub-title">
+                                                        <span>Get 25% off</span>
+                                                    </div>
+                                                    <h2>Túi xách thời trang</h2>
+                                                    <div class="banner-link">
+                                                        <a href="collection.html" class="btn btn-style">Shop now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     <!-- banner-grid end -->
     <section class="slider-category section-ptb ">
         <div class="container">

@@ -76,7 +76,7 @@ class CategoryController extends Controller
         $real_name = $data['file'];
         // xử lí ảnh
         $file = $request->file('file');
-        if($_FILES){
+        if($file){
             $size=$file->getSize();
         if($size>0){
             if(file_exists('uploads/category/'.$category->image)){

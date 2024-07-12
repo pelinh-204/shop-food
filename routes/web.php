@@ -1,9 +1,12 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Indexcontroller;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\VariantController;
+use App\Models\Banner;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +31,7 @@ Route::prefix('admin')->group(function(){
     Route::get('/',[AdminController::class,'index']);
     Route::resource('category',CategoryController::class);
     Route::resource('product',ProductController::class);
+    Route::resource('variant',VariantController::class);
+    Route::resource('banner',BannerController::class);
 
 });
