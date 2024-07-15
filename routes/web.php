@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get/post/delete/patch/resource('/product/{id}'[controller muốn trỏ đến::class,'tên function'])
 
 Route::get('/',[Indexcontroller::class,'HomeController']);
-Route::get('detail-product',[Indexcontroller::class,'DetailController'])->name('detailPro');
+Route::get('detail-product/{id}',[Indexcontroller::class,'DetailController'])->name('detailPro');
 
 
 // route admin

@@ -1,1358 +1,293 @@
 @extends('layout.main')
 @section('main')
-<main id="main-content">
-    <!-- main-slider start -->
-    <section class="slider-content">
-        <div class="home-slider owl-carousel owl-theme" id="home-slider5">
-            <div class="item">
-                <div class="slider-image-info">
-                    <div class="slider-image">
-                        <img src="{{asset('img/banner/ban5.jpg')}}"  alt="slider1" width="980px" height="550px">
-                    </div>
-                    <!-- <div class="container slider-text-content">
-                        <div class="slider-text-info slider-content-right slider-text-left">
-                            <h2><span>Filled with nutrients</span></h2>
-                            <div class="slider-price">
-                                <span class="slider-review">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <h2 class="price-text">
-                                    <span>$24.00</span>
-                                    <span>$37.00</span>
-                                </h2>
-                            </div>
-                            <div class="main-btn">
-                                <div class="slider-link">
-                                    <a href="collection.html.html" class="btn btn-style">Shop now</a>
-                                    <a href="collection.html.html" class="btn btn-style3">All product</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <div class="slider-image-info">
-                    <div class="slider-image">
-                        <img src="{{ asset('img/banner/ban1.jpg') }} " alt="slider2"width="980px" height="550px">
-                    </div>
-                    <!-- <div class="container slider-text-content">
-                        <div class="slider-text-info slider-content-right slider-text-left">
-                            <h2><span>Filled with nutrients</span></h2>
-                            <div class="slider-price">
-                                <span class="slider-review">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <h2 class="price-text">
-                                    <span>$24.00</span>
-                                    <span>$37.00</span>
-                                </h2>
-                            </div>
-                            <div class="main-btn">
-                                <div class="slider-link">
-                                    <a href="collection.html.html" class="btn btn-style">Shop now</a>
-                                    <a href="collection.html.html" class="btn btn-style3">All product</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <div class="slider-image-info">
-                    <div class="slider-image">
-                        <img src="{{asset('img/banner/ban3.jpg')}}"width="980px" height="550px" alt="slider3">
-                    </div>
-                    <!-- <div class="container slider-text-content">
-                        <div class="slider-text-info slider-content-right slider-text-left">
-                            <h2><span>Filled with nutrients</span></h2>
-                            <div class="slider-price">
-                                <span class="slider-review">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <h2 class="price-text">
-                                    <span>$24.00</span>
-                                    <span>$37.00</span>
-                                </h2>
-                            </div>
-                            <div class="main-btn">
-                                <div class="slider-link">
-                                    <a href="collection.html.html" class="btn btn-style">Shop now</a>
-                                    <a href="collection.html.html" class="btn btn-style3">All product</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="item">
-                <div class="slider-image-info">
-                    <div class="slider-image">
-                        <img src="{{asset('img/banner/ban4.jpg')}}" width="980px" height="550px" alt="slider3">
-                    </div>
-                    <!-- <div class="container slider-text-content">
-                        <div class="slider-text-info slider-content-right slider-text-left">
-                            <h2><span>Filled with nutrients</span></h2>
-                            <div class="slider-price">
-                                <span class="slider-review">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <h2 class="price-text">
-                                    <span>$24.00</span>
-                                    <span>$37.00</span>
-                                </h2>
-                            </div>
-                            <div class="main-btn">
-                                <div class="slider-link">
-                                    <a href="collection.html.html" class="btn btn-style">Shop now</a>
-                                    <a href="collection.html.html" class="btn btn-style3">All product</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- main-slider end -->
-    <!-- brand-logo start -->
-    <div class="brand-logo section-pt mb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="brand-logo-wrap">
-                        <div class="brand-logo-slider owl-carousel owl-theme" id="brand-logo5">
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo1.png')}}" class="img-fluid" alt="brand-logo1">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo2.png')}}" class="img-fluid" alt="brand-logo2">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo3.png')}}" class="img-fluid" alt="brand-logo3">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo4.png')}}" class="img-fluid" alt="brand-logo4">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo5.png')}}" class="img-fluid" alt="brand-logo5">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="index5.html">
-                                    <span class="brand-img">
-                                        <img src="{{asset('img/brand-logo/home5-brand-logo6.png')}}" class="img-fluid" alt="brand-logo6">
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- brand-logo end -->
-    <!-- banner-grid start -->
-    <section class="banner-grid section-ptb">
+<main class="main">
+            <div class="intro-section bg-lighter pt-5 pb-6">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <div class="banner-content">
-                                <ul class="banner-ul">
-                                    <li class="banner-li">
-                                        <div class="banner-wrap">
-                                            <a href="collection.html" class="banner-img">
-                                                <img src="{{asset('img/banner/b3.jpg')}}" class="img-fluid" alt="banner1">
+                       <div class="col-lg-8">
+                            <div class="intro-slider-container slider-container-ratio slider-container-1 mb-2 mb-lg-0">
+                                <div class="intro-slider intro-slider-1 owl-carousel owl-simple owl-light owl-nav-inside" data-toggle="owl" data-owl-options='{
+                                        "nav": false, 
+                                        "responsive": {
+                                            "768": {
+                                                "nav": true
+                                            }
+                                        }
+                                    }'>
+                                    @foreach ($banner as $value )
+                                    <div class="intro-slide">
+                                        <figure class="slide-image">
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="{{asset('uploads/banner/bt1.89.jpg'.$value->img)}}">
+                                                <img src="{{asset('uploads/banner/'.$value->img)}}" alt="Image Desc">
+                                            </picture>
+                                        </figure><!-- End .slide-image -->
+
+                                        <div class="intro-content">
+                                            <h3 class="intro-subtitle">{{$value->tittle}}</h3>
+                                            <h1 class="intro-title">{{$value->content}}</h1>
+
+                                            <a href="category.html" class="btn btn-outline-white">
+                                                <span>SHOP NOW</span>
+                                                <i class="icon-long-arrow-right"></i>
                                             </a>
-                                            <div class="banner-wrapper banner-right">
-                                                <div class="banner-info">
-                                                    <div class="banner-sub-title">
-                                                        <span>Get 30% off</span>
-                                                    </div>
-                                                    <h2>Túi da mềm chất lượng</h2>
-                                                    <div class="banner-link">
-                                                        <a href="collection.html" class="btn btn-style">Shop now</a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                                
+                                <span class="slider-loader"></span><!-- End .slider-loader -->
+                            </div><!-- End .intro-slider-container -->
+                        </div>
+                    
+                        <div class="col-lg-4">
+                            <div class="intro-banners">
+                                <div class="row row-sm">
+                                    <div class="col-md-6 col-lg-12">
+                                        <div class="banner banner-display">
+                                            <a href="#">
+                                                <img src="{{asset('uploads/banner/btt1.jpg')}}" alt="Banner">
+                                            </a>
+
+                                            <div class="banner-content">
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">Clearence</a></h4><!-- End .banner-subtitle -->
+                                                <h3 class="banner-title text-white"><a href="#">Chairs & Chaises <br>Up to 40% off</a></h3><!-- End .banner-title -->
+                                                <a href="#" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="banner-li">
-                                        <div class="banner-wrap">
-                                            <a href="collection.html" class="banner-img">
-                                                <img src="{{asset('img/banner/b2.jpg')}}" class="img-fluid" alt="banner2">
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-12">
+                                        <div class="banner banner-display mb-0">
+                                            <a href="#">
+                                                <img src="{{asset('uploads/banner/btt2.jpg')}}" alt="Banner">
                                             </a>
-                                            <div class="banner-wrapper banner-left">
-                                                <div class="banner-info">
-                                                    <div class="banner-sub-title">
-                                                        <span>Get 25% off</span>
-                                                    </div>
-                                                    <h2>Túi xách thời trang</h2>
-                                                    <div class="banner-link">
-                                                        <a href="collection.html" class="btn btn-style">Shop now</a>
-                                                    </div>
-                                                </div>
+
+                                            <div class="banner-content">
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">New in</a></h4>
+                                                <h3 class="banner-title text-white"><a href="#">Best Lighting <br>Collection</a></h3>
+                                                <a href="#" class="btn btn-outline-white banner-link">Discover Now<i class="icon-long-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    <!-- banner-grid end -->
-    <section class="slider-category section-ptb ">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="section-capture">
-                        <div class="section-title">
-                            <h2>Juice category</h2>
-                        </div>
-                    </div>
-                    <div class="category-wrapper">
-                        <div class="swiper" id="category-slider5">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="category-item">
-                                        <a href="collection.html">
-                                            <div class="category-block">
-                                                <div class="cat-image">
-                                                    <span class="image">
-                                                        <img src="{{asset('img/cat/home5-cate1.png')}}" class="img-fluid" alt="cat1">
-                                                    </span>
-                                                </div>
-                                                <div class="category-content">
-                                                    <div class="category-text">
-                                                        <div class="title-block">
-                                                            <span class="cat-title">Pineapple juice</span>
-                                                        </div>
-                                                        <div class="label-block">
-                                                            <span>8</span>
-                                                            <span>Items</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="category-button">
-                                                        <span class="button-block"><i class="feather-arrow-up-right"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="category-item">
-                                        <a href="collection.html">
-                                            <div class="category-block">
-                                                <div class="cat-image">
-                                                    <img src="{{asset('img/cat/home5-cate2.png')}}" class="img-fluid" alt="cat2">
-                                                </div>
-                                                <div class="category-content">
-                                                    <div class="category-text">
-                                                        <div class="title-block">
-                                                            <span class="cat-title">Ginger juice</span>
-                                                        </div>
-                                                        <div class="label-block">
-                                                            <span>8</span>
-                                                            <span>Items</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="category-button">
-                                                        <span class="button-block"><i class="feather-arrow-up-right"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="category-item">
-                                        <a href="collection.html">
-                                            <div class="category-block">
-                                                <div class="cat-image">
-                                                    <img src="{{asset('img/cat/home5-cate3.png')}}" class="img-fluid" alt="cat3">
-                                                </div>
-                                                <div class="category-content">
-                                                    <div class="category-text">
-                                                        <div class="title-block">
-                                                            <span class="cat-title">Beetroot juice</span>
-                                                        </div>
-                                                        <div class="label-block">
-                                                            <span>8</span>
-                                                            <span>Items</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="category-button">
-                                                        <span class="button-block"><i class="feather-arrow-up-right"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="category-item">
-                                        <a href="collection.html">
-                                            <div class="category-block">
-                                                <div class="cat-image">
-                                                    <img src="{{asset('img/cat/home5-cate4.png')}}" class="img-fluid" alt="cat4">
-                                                </div>
-                                                <div class="category-content">
-                                                    <div class="category-text">
-                                                        <div class="title-block">
-                                                            <span class="cat-title">Watermelon juice</span>
-                                                        </div>
-                                                        <div class="label-block">
-                                                            <span>8</span>
-                                                            <span>Items</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="category-button">
-                                                        <span class="button-block"><i class="feather-arrow-up-right"></i></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mb-6"></div>
+
+                    <div class="owl-carousel owl-simple" data-toggle="owl" 
+                        data-owl-options='{
+                            "nav": false, 
+                            "dots": false,
+                            "margin": 30,
+                            "loop": false,
+                            "responsive": {
+                                "0": {
+                                    "items":2
+                                },
+                                "420": {
+                                    "items":3
+                                },
+                                "600": {
+                                    "items":4
+                                },
+                                "900": {
+                                    "items":5
+                                },
+                                "1024": {
+                                    "items":6
+                                }
+                            }
+                        }'>
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/1.png')}}" alt="Brand Name">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/2.png')}}" alt="Brand Name">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/3.png')}}" alt="Brand Name">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/4.png')}}" alt="Brand Name">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/5.png')}}" alt="Brand Name">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{{asset('asset/images/brands/6.png')}}" alt="Brand Name">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- product start -->
-    <section class="product-tab section-ptb">
-        <div class="collection-category">
+            <div class="mb-6"></div>
+
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-capture tab">
-                            <div class="section-title">
-                                <h2><span>Juice products</span></h2>
+                <div class="heading heading-center mb-3">
+                    <h2 class="title-lg"> Products</h2><!-- End .title -->
+<!-- 
+                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-fur-link" data-toggle="tab" href="#trendy-fur-tab" role="tab" aria-controls="trendy-fur-tab" aria-selected="false">Furniture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-decor-link" data-toggle="tab" href="#trendy-decor-tab" role="tab" aria-controls="trendy-decor-tab" aria-selected="false">Decor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-light-link" data-toggle="tab" href="#trendy-light-tab" role="tab" aria-controls="trendy-light-tab" aria-selected="false">Lighting</a>
+                        </li>
+                    </ul> -->
+                </div><!-- End .heading -->
+
+                <div class="tab-content tab-content-carousel">
+                    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                            data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            @foreach ($product as $value )
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="{{route('detailPro',$value->id)}}">
+                                        <img src="{{asset('uploads/product/'.$value->image)}}" alt="Product image" class="product-image">
+                                        <img src="{{asset('uploads/product/'.$value->image)}}" alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to wishlist</span></a>
+                                    </div>
+                                </figure>
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="product.html">{{$value->name}}</a></h3><!-- End .product-title -->
+                                    <div class="product-price">
+                                        {{number_format($value->price)}}
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>Add to cart</span></a>
+                                </div><!-- End .product-action -->
                             </div>
-                        </div>
-                        <div class="collection-wrap">
-                            <div class="collection-slider swiper" id="new-product5">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-                                                    <img src="{{asset('img/product/home5-pro-1.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-2.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Apple avocado juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$11.00</span>
-                                                                    <span class="old-price">$19.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-3.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-4.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Apple pineapple juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$25.00</span>
-                                                                    <span class="old-price">$20.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-5.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-6.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Butternut carrot juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$22.00</span>
-                                                                    <span class="old-price">$30.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-7.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-8.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Cacao banana juic</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$18.00</span>
-                                                                    <span class="old-price">$25.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-9.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-10.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Celery lemon juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$61.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-11.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-12.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Cold juice pack</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$54.00</span>
-                                                                    <span class="old-price">$65.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-13.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-14.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Cucumber lemon juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$25.00</span>
-                                                                    <span class="old-price">$45.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-15.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-16.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Lemon ginger juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$25.00</span>
-                                                                    <span class="old-price">$35.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-17.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-18.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Lemon spirulina juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$69.00</span>
-                                                                    <span class="old-price">$79.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-19.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-20.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Apple avocado juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$11.00</span>
-                                                                    <span class="old-price">$19.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-21.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-22.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Apple avocado juice</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$11.00</span>
-                                                                    <span class="old-price">$19.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-product-wrap">
-                                            <div class="product-image">
-                                                <a href="{{route('detailPro')}}" class="pro-img">
-
-                                                    <img src="{{asset('img/product/home5-pro-23.jpg')}}" class="img-fluid img1 mobile-img1" alt="p1">
-                                                    <img src="{{asset('img/product/home5-pro-5.jpg')}}" class="img-fluid img2 mobile-img2" alt="p2">
-                                                </a>
-                                                <div class="product-action">
-                                                    <a href="wishlist-product.html" class="wishlist">
-                                                        <span class="tooltip-text">Wishlist</span>
-                                                        <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                    </a>
-                                                    <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                        <span class="tooltip-text">Quickview</span>
-                                                        <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-info">
-                                                    <div class="product-content">
-                                                        <div class="product-title">
-                                                            <h6><a href="product-template.html">Cacao banana juic</a></h6>
-                                                        </div>
-                                                        <div class="price-cart">
-                                                            <div class="product-price">
-                                                                <div class="price-box">
-                                                                    <span class="new-price">$77.00</span>
-                                                                    <span class="old-price">$80.00</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cart-btn">
-                                                                <a href="#add-to-cart" class="add-to-cart">
-                                                                    <span class="cart-title">
-                                                                        <span class="add-c-title">
-                                                                            <span class="cart-icon"><i class="feather-shopping-bag"></i></span>
-                                                                            <span class="add-title">Add to cart</span>
-                                                                        </span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-ratting">
-                                                            <span class="pro-ratting">
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                                <i class="fa-regular fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-description">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
-                                                        </div>
-                                                        <div class="product-action">
-                                                            <a href="#quickview" class="quickview" data-bs-toggle="modal" data-bs-target="#quickview">
-                                                                <span class="tooltip-text">Quickview</span>
-                                                                <span class="pro-action-icon"><i class="feather-eye"></i></span>
-                                                            </a>
-                                                            <a href="#add-to-cart" class="add-to-cart" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-                                                                <span class="tooltip-text">Add to cart</span>
-                                                                <span class="pro-action-icon"><i class="feather-shopping-bag"></i></span>
-                                                            </a>
-                                                            <a href="wishlist-product.html" class="wishlist">
-                                                                <span class="tooltip-text">Wishlist</span>
-                                                                <span class="pro-action-icon"><i class="feather-heart"></i></span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collection-button">
-                                    <a href="collection.html" class="btn btn-style">View product</a>
-                                </div>
-                            </div>
-                            <div class="swiper-buttons">
-                                <div class="swiper-buttons-wrap">
-                                    <button class="swiper-prev swiper-prev-new5"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                                <polyline points="15 18 9 12 15 6"></polyline>
-                                            </svg></span></button>
-                                    <button class="swiper-next swiper-next-new5"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                                                <polyline points="9 18 15 12 9 6"></polyline>
-                                            </svg></span></button>
-                                </div>
-                            </div>
-                            <div class="swiper-dots">
-                                <div class="swiper-pagination swiper-pagination-new5"></div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- product end -->
-    <!-- instagram-area start -->
-    <section class="instagram section-ptb bt">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="section-capture">
-                        <div class="section-title">
-                            <div class="section-cont-title">
-                                <h2><span>Panno instagram</span></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insta-slider">
-                        <div class="instagram-slider owl-carousel owl-theme" id="instagram-slider5">
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-1.jpg')}}" class="img-fluid" alt="insta-1">
+
+            <div class="mb-5"></div><!-- End .mb-6 -->
+
+            
+
+            <!-- ............... -->
+            <div class="container">
+                <div class="heading heading-center mb-3">
+                    <h2 class="title-lg"> Products</h2><!-- End .title -->
+<!-- 
+                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-fur-link" data-toggle="tab" href="#trendy-fur-tab" role="tab" aria-controls="trendy-fur-tab" aria-selected="false">Furniture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-decor-link" data-toggle="tab" href="#trendy-decor-tab" role="tab" aria-controls="trendy-decor-tab" aria-selected="false">Decor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-light-link" data-toggle="tab" href="#trendy-light-tab" role="tab" aria-controls="trendy-light-tab" aria-selected="false">Lighting</a>
+                        </li>
+                    </ul> -->
+                </div><!-- End .heading -->
+
+                <div class="tab-content tab-content-carousel">
+                    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
+                            data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            @foreach ($product as $value )
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="{{route('detailPro',$value->id)}}">
+                                        <img src="{{asset('uploads/product/'.$value->image)}}" alt="Product image" class="product-image">
+                                        <img src="{{asset('uploads/product/'.$value->image)}}" alt="Product image" class="product-image-hover">
                                     </a>
-                                </div>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to wishlist</span></a>
+                                    </div>
+                                </figure>
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="product.html">{{$value->name}}</a></h3><!-- End .product-title -->
+                                    <div class="product-price">
+                                        {{number_format($value->price)}}
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>Add to cart</span></a>
+                                </div><!-- End .product-action -->
                             </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-2.jpg')}}" class="img-fluid" alt="insta-2">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-3.jpg')}}" class="img-fluid" alt="insta-3">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-4.jpg')}}" class="img-fluid" alt="insta-4">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-5.jpg')}}" class="img-fluid" alt="insta-5">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-6.jpg')}}" class="img-fluid" alt="insta-6">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="insta-content banner-hover">
-                                    <a href="index5-2.html" class="insta-img banner-img">
-                                        <img src="{{asset('img/insta/home5-insta-7.jpg')}}" class="img-fluid" alt="insta-7">
-                                    </a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- instagram-area end -->
-</main>
+
+        </main>
 @endsection

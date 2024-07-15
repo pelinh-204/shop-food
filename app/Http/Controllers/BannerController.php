@@ -48,5 +48,39 @@ class BannerController extends Controller
         return redirect()->route('banner.index');
     }
 
+    public function edit(string $id)
+    {
+        $banner = Banner::find($id);
+        return view('admin.banner.update',compact('banner'));
+    }
 
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        $bn =$request->all();
+        $banner =Banner::find($id);
+        $banner->tittle = $bn['tittle'];
+        $banner->content = $bn['content'];
+        $real_name = $bn['file'];
+        $file =$request->file('file');
+        if($file){
+            $size=$file->getSize();
+            if($size>0){
+                if(file_exists('upload/banner/'.$banner->image)){
+                    unlink('upload/banner/'.$banner->image);
+                }
+                $path = 'uploads/banner';
+                $name_file =$file->getClientOriginalName();
+                $name_image=current(explode('.',$name_file));
+                $real_name =$name_image.'.'.rand(1,1000).'_'.$file->getClientOriginalExtension();
+                $file->move($path,$real_name);
+    }
+}
+ 
+$banner->img = $real_name;
+$banner->save();
+return redirect()->route('banner.index');
+    }
 }
