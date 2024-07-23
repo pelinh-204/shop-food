@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Increment Decrement Input</title>
+<link rel="stylesheet" href="styles.css">
+<style>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #numberInput {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="decrementButton">-</button>
+    <input type="number" id="numberInput" value="0" readonly>
+    <button id="incrementButton">+</button>
+  </div>
+
+  <script >
+    document.addEventListener("DOMContentLoaded", function() {
+  const numberInput = document.getElementById('numberInput');
+  const incrementButton = document.getElementById('incrementButton');
+  const decrementButton = document.getElementById('decrementButton');
+
+  // Xử lý khi click vào nút tăng (+)
+  incrementButton.addEventListener('click', function() {
+    let currentValue = parseInt(numberInput.value) + 1;
+    numberInput.value = currentValue.toString();
+  });
+
+  // Xử lý khi click vào nút giảm (-)
+  decrementButton.addEventListener('click', function() {
+    let currentValue = parseInt(numberInput.value) - 1;
+    if (currentValue >= 0) {
+      numberInput.value = currentValue.toString();
+    }
+  });
+});
+
+  </script>
+</body>
+</html>

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Image;
 use App\Models\Product;
+use App\Models\Sale;
 use App\Models\Variant;
 use Illuminate\Http\Request;
 
@@ -16,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product = Product::all();
+        $product = Product::orderBy('id','DESC')->get();
         return view('admin.product.index',compact('product'));
     }
 
@@ -25,8 +26,9 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $sale = Sale::all();
         $category = Category::all();
-        return view('admin.product.add',compact('category'));
+        return view('admin.product.add',compact('category','sale'));
 
     }
 
@@ -43,6 +45,13 @@ class ProductController extends Controller
         $product->description = $data['editor'];
         $product->status =$data['status'];
         $product->category_id =$data['category_id'];
+        if($data['sale_id'] > 0){
+            $product->sale_id =$data['sale_id'];
+
+        }else{
+            $product->sale_id = 0;
+
+        }
 
         $path = 'uploads/product';
         $name_file = $file->getClientOriginalName();
@@ -84,10 +93,11 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
+        $sale = Sale::all();
         $category = Category::all();
         $detail = Product::find($id);
         $images = Image::where('product_id',$id)->get();
-        return view('admin.product.update',compact('detail','category','images'));
+        return view('admin.product.update',compact('detail','category','images','sale'));
     }
 
     /**
@@ -103,6 +113,13 @@ class ProductController extends Controller
         $product->description = $data['editor'];
         $product->status =$data['status'];
         $product->category_id =$data['category_id'];
+        if($data['sale_id'] > 0){
+            $product->sale_id =$data['sale_id'];
+
+        }else{
+            $product->sale_id = 0;
+
+        }
         $real_name=$data['file'];
 
         if($file){

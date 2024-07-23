@@ -13,4 +13,9 @@ class Product extends Model
     public function variant(){
         return $this->hasMany(Variant::class,'product_id');
     }
+
+    public function sale(){
+        return $this->belongsTo(Sale::class,'sale_id');
+    }
+
 }

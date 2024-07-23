@@ -58,6 +58,15 @@
                 <textarea name="editor" id="editor" >{{$detail->description}}</textarea>
             </div>
         </div>
+        <div class="mt-4">
+        <label for="">Sale_id</label>
+                <select name="sale_id" id="" class="form-control">
+                    <option value="" selected> Select Sale</option>
+                    @foreach ($sale as $value )
+                    <option value="{{$value->id}}">{{$value->discount}}%</option>
+                    @endforeach
+                </select>
+        </div>  
 
         <div class="col-lg-12 mb-3 mt-4" >
         <a href="{{route('product.index')}}" class="btn btn-primary">List Product</a>

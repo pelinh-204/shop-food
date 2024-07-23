@@ -13,12 +13,15 @@ return new class extends Migration
     {
         Schema::create('variants', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id');
+            $table->unsignedBigInteger('product_id');
             $table->text('image');
             $table->integer('quantity');
-            $table->string('color',50);
+            $table->string('color', 50);
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
+
+            // Thêm khóa ngoại
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
 

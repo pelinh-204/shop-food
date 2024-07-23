@@ -50,9 +50,9 @@
                                             </a>
 
                                             <div class="banner-content">
-                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">Clearence</a></h4><!-- End .banner-subtitle -->
-                                                <h3 class="banner-title text-white"><a href="#">Chairs & Chaises <br>Up to 40% off</a></h3><!-- End .banner-title -->
-                                                <a href="#" class="btn btn-outline-white banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">Đón hè xinh</a></h4><!-- End .banner-subtitle -->
+                                                <h3 class="banner-title text-white"><a href="#">Sale Sập Sàn</a></h3><!-- End .banner-title -->
+                                                <a href="#sales" class="btn btn-outline-white banner-link">Mua Ngay<i class="icon-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -64,9 +64,9 @@
                                             </a>
 
                                             <div class="banner-content">
-                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">New in</a></h4>
-                                                <h3 class="banner-title text-white"><a href="#">Best Lighting <br>Collection</a></h3>
-                                                <a href="#" class="btn btn-outline-white banner-link">Discover Now<i class="icon-long-arrow-right"></i></a>
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="#">Mùa hè rộn ràng</a></h4>
+                                                <h3 class="banner-title text-white"><a href="#">Mua túi nha nàng</a></h3>
+                                                <a href="#" class="btn btn-outline-white banner-link">Xem thêm !<i class="icon-long-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -76,8 +76,8 @@
                     </div>
 
                     <div class="mb-6"></div>
-
-                    <div class="owl-carousel owl-simple" data-toggle="owl" 
+                                        
+                    <div class="owl-carousel owl-simple mt-5" data-toggle="owl" 
                         data-owl-options='{
                             "nav": false, 
                             "dots": false,
@@ -101,6 +101,7 @@
                                 }
                             }
                         }'>
+                        
                         <a href="#" class="brand">
                             <img src="{{asset('asset/images/brands/1.png')}}" alt="Brand Name">
                         </a>
@@ -130,9 +131,9 @@
 
             <div class="mb-6"></div>
 
-            <div class="container">
-                <div class="heading heading-center mb-3">
-                    <h2 class="title-lg"> Products</h2><!-- End .title -->
+            <div class="container" id="sales">
+                <div class="heading mb-3">
+                    <h2 class="title-lg  text-danger" > Sale</h2><!-- End .title -->
 <!-- 
                     <ul class="nav nav-pills justify-content-center" role="tablist">
                         <li class="nav-item">
@@ -150,7 +151,7 @@
                     </ul> -->
                 </div><!-- End .heading -->
 
-                <div class="tab-content tab-content-carousel">
+                <div class="tab-content tab-content-carousel" >
                     <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
                         <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl" 
                             data-owl-options='{
@@ -178,7 +179,7 @@
                                     }
                                 }
                             }'>
-                            @foreach ($product as $value )
+                            @foreach ($productSale as $value )
                             <div class="product product-11 text-center">
                                 <figure class="product-media">
                                     <a href="{{route('detailPro',$value->id)}}">
@@ -194,7 +195,16 @@
                                 <div class="product-body">
                                     <h3 class="product-title"><a href="product.html">{{$value->name}}</a></h3><!-- End .product-title -->
                                     <div class="product-price">
-                                        {{number_format($value->price)}}
+                                        <strike>{{number_format($value->price)}}
+                                        </strike>
+                                        <span style="color: red; margin-left:10px;">
+                                               @php
+                                              
+                                               $amount = ($value->sale->discount / 100) * $value->price;  
+                                               $real = $value->price - $amount; 
+                                               echo number_format($real,0,',','.').' VNĐ';                                            
+                                               @endphp 
+                                        </span>
                                     </div><!-- End .product-price -->
                                 </div><!-- End .product-body -->
                                 <div class="product-action">
@@ -213,24 +223,10 @@
 
             <!-- ............... -->
             <div class="container">
-                <div class="heading heading-center mb-3">
-                    <h2 class="title-lg"> Products</h2><!-- End .title -->
-<!-- 
-                    <ul class="nav nav-pills justify-content-center" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab" role="tab" aria-controls="trendy-all-tab" aria-selected="true">All</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="trendy-fur-link" data-toggle="tab" href="#trendy-fur-tab" role="tab" aria-controls="trendy-fur-tab" aria-selected="false">Furniture</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="trendy-decor-link" data-toggle="tab" href="#trendy-decor-tab" role="tab" aria-controls="trendy-decor-tab" aria-selected="false">Decor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="trendy-light-link" data-toggle="tab" href="#trendy-light-tab" role="tab" aria-controls="trendy-light-tab" aria-selected="false">Lighting</a>
-                        </li>
-                    </ul> -->
-                </div><!-- End .heading -->
+                <div class="heading  mb-3">
+                    <h2 class="title-lg"> Products</h2>
+
+                </div>
 
                 <div class="tab-content tab-content-carousel">
                     <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel" aria-labelledby="trendy-all-link">
@@ -274,14 +270,14 @@
                                 </figure>
 
                                 <div class="product-body">
-                                    <h3 class="product-title"><a href="product.html">{{$value->name}}</a></h3><!-- End .product-title -->
+                                    <h3 class="product-title"><a href="product.html">{{$value->name}}</a></h3>
                                     <div class="product-price">
                                         {{number_format($value->price)}}
-                                    </div><!-- End .product-price -->
-                                </div><!-- End .product-body -->
+                                    </div>
+                                </div>
                                 <div class="product-action">
                                     <a href="#" class="btn-product btn-cart"><span>Add to cart</span></a>
-                                </div><!-- End .product-action -->
+                                </div>
                             </div>
                             @endforeach
                         </div>

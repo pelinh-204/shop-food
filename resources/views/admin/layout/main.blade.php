@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -884,6 +884,25 @@
                                     <li class="nav-item">
                                         <a href="{{route('banner.index')}}" class="nav-link" data-key="t-crm"> List Banner</a>
                                     </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                                <i class="ri-pages-line"></i> <span data-key="t-pages">Sale</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarPages">
+                                <ul class="nav nav-sm flex-column">
+                                     <li class="nav-item">
+                                        <a href="{{route('sale.create')}}" class="nav-link" data-key="t-term-conditions">Add Sale</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('sale.index')}}" class="nav-link" data-key="t-starter">List Sale </a>
+                                    </li>
+                                   
                                 </ul>
                             </div>
                         </li>

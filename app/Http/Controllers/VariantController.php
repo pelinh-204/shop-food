@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class VariantController extends Controller
 {
     public function index(){
-        $variant = Variant::all();
+        $variant = Variant::orderBy('id','DESC')->get();
         return view('admin.variant.index',compact('variant'));
     }
 

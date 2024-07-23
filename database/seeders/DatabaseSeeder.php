@@ -1,6 +1,8 @@
 <?php
 
 namespace Database\Seeders;
+use Illuminate\Support\Facades\DB;
+
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,5 +20,13 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        // cách 1 nhập trực tiếp vào databaseSeeder
+        // tạo 1 bản ghi
+
+        
+        $this->call([
+        CategoriesSeeder::class,
+        ProductsSeeder::class,
+        ]);
     }
 }

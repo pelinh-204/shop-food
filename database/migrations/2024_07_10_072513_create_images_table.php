@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->text('link')->comment('Link ảnh');
-            $table->integer('product_id');//id sản phẩm
+            $table->unsignedBigInteger('product_id'); // id sản phẩm
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
+
+            // Thêm khóa ngoại
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
 

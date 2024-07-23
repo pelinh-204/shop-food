@@ -22,6 +22,7 @@
                             <th>Image</th>
                             <th>Description</th>
                             <th>Category_id</th>
+                            <th>Sale_id</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -37,11 +38,17 @@
                             <td>{{$value->id}}</td>
                             <td>{{$value->name}}</td>
                             <td>{{$value->price}}</td>
-                           
-
                             <td><img src="{{asset('uploads/product/'.$value->image)}}" alt="" width="150px" height="150px"></td>
                             <td>{{$value->description}}</td>
                             <td>{{$value->category->name}}</td>
+                            <td>
+                                @if ($value->sale_id > 0)
+                            {{$value->sale->discount}}%
+                            @else 
+                            Không áp dụng khuyến mãi
+                            @endif
+                        </td>
+
                             <td style="display:flex;">
                                 <a href="{{route('product.edit',$value->id)}}"><button class="btn btn-warning">Update</button></a>
                                 <form action="{{route('product.destroy',$value->id)}}" method="post" style=" margin-left:10px;">
